@@ -1,14 +1,14 @@
 (function(global, factory) {
 
     if (typeof module === 'object' && typeof module.exports === 'object') {
-        module.exports = factory(global);
+        module.exports = factory(global, global.document);
     } else if (typeof define === 'function' && define.amd) {
-        define([], factory(global));
+        define([], factory(global, global.document));
     } else {
-        global.VanillaCarousel = factory(global);
+        global.VanillaCarousel = factory(global, global.document);
     }
 
-})(typeof window !== 'undefined' ? window : this, function(window) {
+})(typeof window !== 'undefined' ? window : this, function(window, document) {
     'use strict';
 
     var VanillaCarousel = function(element, options) {
