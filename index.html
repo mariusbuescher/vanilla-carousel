@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Vanilla Carousel</title>
+
+    <link rel="stylesheet" href="src/vanilla-carousel.basic.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <div id="carousel" class="vanilla-carousel">
+        <div class="carousel-item red">1</div>
+        <div class="carousel-item blue">2</div>
+        <div class="carousel-item green">3</div>
+        <div class="carousel-item purple">4</div>
+        <div class="carousel-item yellow">5</div>
+    </div>
+
+    <button id="prev">Prev</button>
+    <button id="next">Next</button>
+
+    <script type="text/javascript" src="src/vanilla-carousel.js"></script>
+
+    <script type="text/javascript">
+        var carousel = new VanillaCarousel(document.getElementById('carousel'), {
+            loop: true,
+            start: 3
+        });
+
+        document.getElementById('prev').addEventListener('click', function () {
+            carousel.prev();
+        });
+
+        document.getElementById('next').addEventListener('click', function () {
+            carousel.next();
+        });
+    </script>
+
+</body>
+</html>

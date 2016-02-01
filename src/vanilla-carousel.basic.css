@@ -1,0 +1,17 @@
+.vanilla-carousel {
+    overflow: hidden;
+    width: 100%;
+}
+
+.vanilla-stage {
+    overflow: hidden;
+    transition: transform 0.5s;
+}
+
+.vanilla-no-animation {
+    transition: none;
+}
+
+.vanilla-item {
+    float: left;
+}
