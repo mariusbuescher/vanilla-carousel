@@ -10,3 +10,7 @@ the DOM Abstraction in your Browser.
 - Loops
 - CSS3 Animations
 - Responsive behaviour
+
+## Browser support
+
+Due to new technology this carousel can only be used in IE10+.
